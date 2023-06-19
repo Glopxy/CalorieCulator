@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DailyCalorieNeedCalculator</string>
+    <string name="boy">Boyunuz (cm)</string>
+    <string name="kilo">Kilo (kg)</string>
+    <string name="yas">Yaş</string>
+    <string name="aktivite">Aktivite Seviyesi</string>
+    <string name="cinsiyet">Cinsiyetiniz</string>
+    <string name="kadin">Kadın</string>
+    <string name="erkek">Erkek</string>
+    <string name="hesapla">Hesapla</string>
+    <string name="sonuc">Günlük Kalori İhtiyacınız: </string>
+
+    <string-array name="aktivite">
+        <item>Sedanter (Hareket etmiyorum veya çok az hareket ediyorum.)</item>
+        <item>Az hareketli (Hafif hareketli bir yaşam / Haftada 1-3 gün egzersiz yapıyorum.)</item>
+        <item>Orta derece hareketli (Hareketli bir yaşam / Haftada 3-5 gün egzersiz yapıyorum.)</item>
+        <item>Çok hareketli (Çok hareketli bir yaşam / Haftada 6-7 gün egzersiz yapıyorum.)</item>
+        <item>Aşırı hareketli (Profesyonel sporcu, atlet seviyesi.)</item>
+    </string-array>
+</resources>

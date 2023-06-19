@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextHeight"
+        app:layout_constraintStart_toStartOf="@+id/editTextHeight"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextWeight"
+        app:layout_constraintStart_toStartOf="@+id/editTextWeight"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+
+    <Spinner
+        android:id="@+id/spinnerActivityLevel"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAge"
+        app:layout_constraintStart_toStartOf="@+id/editTextAge"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/hesapla"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerActivityLevel"
+        app:layout_constraintStart_toStartOf="@+id/spinnerActivityLevel"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMale" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/sonuc"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCalculate"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDes" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/erkek"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxFemale"
+        app:layout_constraintStart_toStartOf="@+id/spinnerActivityLevel"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerActivityLevel" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFemale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/kadin"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerActivityLevel"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMale"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerActivityLevel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aktivite"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerActivityLevel"
+        app:layout_constraintStart_toStartOf="@+id/spinnerActivityLevel" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cinsiyet"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxMale"
+        app:layout_constraintStart_toStartOf="@+id/spinnerActivityLevel" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boy"
+        app:layout_constraintBottom_toTopOf="@+id/editTextHeight"
+        app:layout_constraintStart_toStartOf="@+id/editTextHeight" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kilo"
+        app:layout_constraintBottom_toTopOf="@+id/editTextWeight"
+        app:layout_constraintStart_toStartOf="@+id/editTextWeight" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yas"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAge"
+        app:layout_constraintStart_toStartOf="@+id/editTextAge" />
+
+    <TextView
+        android:id="@+id/textViewDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCalculate"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
